@@ -24,5 +24,5 @@ To use the Anti Key List Python script, you will need:
 
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/YourUsername/AntiKeyList.git](https://github.com/WhyTrashEarth/ANTIKEYLIST)
+   git clone https://github.com/WhyTrashEarth/ANTIKEYLIST
    cd AntiKeyList
