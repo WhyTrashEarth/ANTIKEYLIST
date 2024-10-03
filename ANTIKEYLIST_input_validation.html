@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTIKEYLIST Input Validation</title>
+    <script>
+        // Approved characters for input validation
+        const approvedChars = "3479ACDEFGHJKMNPQRTUVWXYacdefghjkmnpqrtuvwy@#$%^&*_+=";
+
+        // Function to validate input and prevent disallowed characters
+        function validateInput(event) {
+            const input = event.target.value;
+            const lastChar = input.slice(-1); // Get the last typed character
+            const errorMsg = document.getElementById("errorMsg");
+
+            if (!approvedChars.includes(lastChar)) {
+                // If last character is not approved, remove it from input
+                event.target.value = input.slice(0, -1);
+                errorMsg.textContent = "Invalid character: " + lastChar;
+                errorMsg.style.color = "red";
+            } else {
+                errorMsg.textContent = ""; // Clear the error message
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>ANTIKEYLIST Input Validation</h1>
+
+    <!-- Input field for testing validation -->
+    <label for="inputField">Enter Text:</label>
+    <input type="text" id="inputField" oninput="validateInput(event)" placeholder="Enter approved characters only">
+    <p id="errorMsg"></p>
+
+</body>
+</html>
