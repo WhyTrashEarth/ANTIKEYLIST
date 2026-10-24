@@ -44,5 +44,8 @@ The Anti Key List project is dedicated to everyone passionate about improving ac
 
 ## Contact
 
-For fast support or direct contact, reach out to us on X:
-[@WhyTrashEarth](https://twitter.com/WhyTrashEarth)
+For questions, bugs and ideas, use the [GitHub issue tracker](https://github.com/WhyTrashEarth/ANTIKEYLIST/issues). Include the font, size and context when reporting a character-confusion problem. Use made-up examples instead of private access codes.
+
+## Artwork
+
+Annie Key's illustration is by [Nano (@Mainlian)](https://vgen.co/Mainlian). The original supplied artwork is preserved, and Nano is credited alongside it on the site and in sharing artwork. The project's CC0 code dedication does not assign a license to this illustration.

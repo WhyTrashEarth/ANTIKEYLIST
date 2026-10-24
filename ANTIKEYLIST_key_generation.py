@@ -1,6 +1,6 @@
-import random
+import secrets
 
-# Define the approved characters that are safe and not easily confused
+# Original proposed alphabet. Readability still depends on font and context.
 approved_chars = "3479ACDEFGHJKMNPQRTUVWXYacdefghjkmnpqrtuvwy@#$%^&*_+="
 
 # Function to generate a key with a customizable length
@@ -14,9 +14,9 @@ def generate_key(length=10):
     Returns:
     str: A random string of the specified length using only approved characters
     """
-    if length <= 0:
+    if isinstance(length, bool) or not isinstance(length, int) or length <= 0:
         raise ValueError("Length must be a positive integer.")
-    return ''.join(random.choice(approved_chars) for _ in range(length))
+    return ''.join(secrets.choice(approved_chars) for _ in range(length))
 
 # Main function for running the script
 if __name__ == "__main__":

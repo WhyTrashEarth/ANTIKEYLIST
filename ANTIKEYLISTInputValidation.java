@@ -7,6 +7,9 @@ public class ANTIKEYLISTInputValidation {
 
     // Function to validate input based on the approved characters
     public static boolean validateInput(String userInput) {
+        if (userInput == null || userInput.isEmpty()) {
+            return false;
+        }
         for (int i = 0; i < userInput.length(); i++) {
             if (approvedChars.indexOf(userInput.charAt(i)) == -1) {
                 return false;  // Invalid character found
