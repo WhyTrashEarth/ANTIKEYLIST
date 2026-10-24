@@ -12,7 +12,7 @@ The set has 53 unique characters: 4 numbers, 20 uppercase letters, 19 lowercase 
 
 Use restricted alphabets for generated identifiers where appropriate, not to restrict people's names or messages. Alphabet membership alone does not establish security. Production authentication systems also need suitable lengths, random generation, expiration, storage and rate limits.
 
-## Website preview
+## Website
 
 Requires Node 22.23.4 or later (developed with Node 24.18.0). Astro is pinned to 7.4.2, the current npm release when this preview was built on October 24, 2026.
 
@@ -31,7 +31,7 @@ npm run build
 npm run preview -- --port 4173 --ignore-lock
 ```
 
-The `--ignore-lock` option keeps Astro in the foreground for retained development sessions. Stop it with Ctrl-C. Static output is written to `dist/`. The canonical production URL is configured as `https://antikeylist.com`; this does not change any live deployment or DNS setting.
+The `--ignore-lock` option keeps Astro in the foreground for retained development sessions. Stop it with Ctrl-C. Static output is written to `dist/`. The live site is [antikeylist.com](https://antikeylist.com). Cloudflare Pages builds and deploys `main` automatically after the configured checks pass. The `www` and `.org` addresses redirect to the canonical HTTPS URL, preserving paths and query strings. See [deployment notes](docs/DEPLOYMENT.md) for hosting, verification and rollback details.
 
 The website includes:
 
