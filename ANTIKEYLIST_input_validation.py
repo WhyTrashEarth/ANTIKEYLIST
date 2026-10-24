@@ -1,4 +1,4 @@
-# Define the approved characters that are safe and not easily confused
+# Original proposed alphabet. Membership is not a guarantee of readability.
 approved_chars = "3479ACDEFGHJKMNPQRTUVWXYacdefghjkmnpqrtuvwy@#$%^&*_+="
 
 # Function to validate input based on the approved character set
@@ -12,7 +12,7 @@ def validate_input(user_input):
     Returns:
     bool: True if the input is valid (contains only approved characters), False otherwise
     """
-    if not user_input:  # Check if input is empty
+    if not isinstance(user_input, str) or not user_input:
         return False
 
     return all(char in approved_chars for char in user_input)

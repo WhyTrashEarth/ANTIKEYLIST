@@ -1,0 +1,13 @@
+{
+  "name": "Anti Key List",
+  "short_name": "Anti Key List",
+  "description": "A little less guesswork. A big love of legibility.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcf3ec",
+  "theme_color": "#fcf3ec",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

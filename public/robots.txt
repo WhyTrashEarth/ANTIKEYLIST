@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://antikeylist.com/sitemap.xml

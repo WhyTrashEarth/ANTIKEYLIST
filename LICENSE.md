@@ -2,6 +2,8 @@ CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
 The Anti Key List project is released under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
 
+This dedication covers the project's code and character-set proposal. It does not relicense third-party assets: Annie Key's illustration is by [Nano (@Mainlian)](https://vgen.co/Mainlian), with credit details in `public/art/ARTWORK-CREDIT.txt`; Atkinson Hyperlegible is supplied under the SIL Open Font License in `public/fonts/OFL-Atkinson-Hyperlegible.txt`. No additional artwork reuse permission is asserted here.
+
 ## Statement of Purpose
 
 The Anti Key List was created with the goal of improving accessibility and usability by reducing character confusion. We believe this project will benefit people across various industries, and as such, we dedicate this work to the public domain, ensuring that it remains freely accessible and modifiable for everyone.
